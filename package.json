@@ -1,30 +1,32 @@
 {
-  "name": "scrollytelling",
-  "namespace": "@bsmnt",
+  "name": "pyro-vercel",
   "private": true,
   "version": "0.0.0",
-  "workspaces": [
-    "website",
-    "docs",
-    "scrollytelling",
-    "internal/*"
-  ],
+  "type": "module",
   "scripts": {
-    "build": "turbo run build",
-    "build:packages": "turbo run build --filter=@bsmnt/scrollytelling",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "generate": "turbo run generate",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "version:packages": "yarn changeset version",
-    "release": "yarn build:packages && yarn changeset publish"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@bsmnt/scrollytelling": "^0.3.2",
+    "@react-three/drei": "^9.96.4",
+    "@react-three/fiber": "^8.15.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.22.0",
-    "eslint-config-custom": "*",
-    "prettier": "2.5.1",
-    "turbo": "1.9.0"
-  },
-  "dependencies": {},
-  "packageManager": "yarn@1.22.19"
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "sass": "^1.70.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
 }
