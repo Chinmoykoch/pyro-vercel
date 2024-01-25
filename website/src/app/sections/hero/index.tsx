@@ -19,142 +19,7 @@ export const Hero = () => {
 
 
 
-  function AnimatedText() {
-    const text = useRef(null);
-    const mq = window.matchMedia("(max-width: 48em)");
   
-    if(mq.matches){useLayoutEffect(() => {
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(text.current, {
-        ease: "power2.in",
-        scrollTrigger: {
-          trigger: text.current,
-          scrub: true,
-          start: "top+=450px center",
-          end: "bottom+=890px 15%",
-
-        },
-        opacity: 0,
-        x: "-=100",
-      });
-    }, []);
-  }else{
-    useLayoutEffect(() => {
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(text.current, {
-        ease: "power2.in",
-        scrollTrigger: {
-          trigger: text.current,
-          scrub: true,
-          start: "top+=450px center",
-          end: "bottom+=990px 15%",
-
-        },
-        opacity: 0,
-        x: "-=100",
-      });
-    }, []);
-  }
-    
-  
-    return (
-      <div className={`${s["svg-make"]}`}> {/* Add multiple classes */}
-        <h1 ref={text} className="when">
-          when
-        </h1>
-        <h1>enchantment</h1>
-      </div>
-    );
-  }
-
-
-  const Mystery = () => {
-    const text = useRef(null);
-
-
-      useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.from(text.current, {
-          ease: "power2",
-          scrollTrigger: {
-            trigger: text.current,
-            scrub: true,
-            start: "top+=550px center",
-            end: "bottom+=900px center",
-          },
-          opacity: 0,
-          y: "+=20",
-        });
-      }, []);
-
-
-  
-   
-  
-    return (
-      <div className={` ${s["svg-coolshit"]}`}> {/* Add multiple classes */}
-        <h1 ref={text}>
-          meets
-        </h1>
-        <div className="mystery"><h1 className="mystry">mystery</h1></div>
-        
-      </div>
-    );
-  }
-
-
-  const Pyrokinesis = () => {
-    const text = useRef(null);
-    const mq = window.matchMedia("(max-width: 48em)");
-
-
-    if(mq.matches){useLayoutEffect(() => {
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(text.current, {
-        ease: "power2.in",
-        scrollTrigger: {
-          trigger: text.current,
-          scrub: true,
-          start: "top+=450px center",
-          end: "bottom+=890px 15%",
-        },
-        opacity: 0,
-        // x: "+=100",
-      });
-    }, []);
-  }else{useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.from(
-      text.current,
-      
-      { 
-        ease: "power2.in",
-        scrollTrigger: {
-          trigger: text.current,
-          scrub: true,
-          start: "top-=10vh center",
-          end: "bottom+=1090vh center",
-          
-        },
-        opacity: 0,
-        // x: "+=200",
-      }
-    );
-  }, []);
-}
-  
-    
-  
-    return (
-      <div className={`${s["svg-performs"]}`}> {/* Add multiple classes */}
-        <h1>Pyrokinesis</h1>
-        <h1 ref={text} className="year">
-          2024
-        </h1>
-      </div>
-    );
-  };
-
 
 
   return (
@@ -320,8 +185,8 @@ export const Hero = () => {
                   <br /> just for fun.
                 </p>
                 <p>
-                  Sometimes size doesn&apos;t matter. we work for big & small
-                  non-stoppable visionaries. here&apos;s love for them all.
+                  Sometimes size doesn't matter. we work for big & small
+                  non-stoppable visionaries. here's love for them all.
                 </p>
               </div>
             </div>

@@ -29,7 +29,7 @@ export const useViewportSize = (
           height: window.innerHeight,
           aspect: window.innerWidth / window.innerHeight
         })
-      }, callTreshhold)
+      },[])
     }
 
     window.addEventListener('resize', handleResize, { passive: true })
