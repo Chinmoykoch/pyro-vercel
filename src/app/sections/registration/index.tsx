@@ -1,7 +1,4 @@
-"use client"
-
-
-import React, { ReactElement, FormEventHandler } from 'react';
+import { ReactElement, FormEventHandler } from 'react';
 
 import './registration.scss';
 
@@ -37,10 +34,10 @@ function Registration(): ReactElement {
                 <input type="tel" id="phoneNumber" name="phoneNumber" required />
               </div>
 
-              {/* <div className="form-group">
-                <label htmlFor="college">College/University(Optional):</label>
+              <div className="form-group">
+                <label htmlFor="college">College/University:</label>
                 <input type="text" id="college" name="college" required />
-              </div> */}
+              </div>
 
               <div className="form-group">
                 <label htmlFor="address">Address:</label>
@@ -65,14 +62,5 @@ export default Registration;
 
 
 
-  {/* <div className="form-group">
-                <label htmlFor="events">Select days:</label>
-                <select id="events" name="events" multiple>
-                  <option value="event1">Day 1</option>
-                  <option value="event2">Day 2</option>
-                  <option value="event3">Day 3</option>
-                  <option value="event4">Day 4</option>
-                </select>
-              </div> */}
 
 

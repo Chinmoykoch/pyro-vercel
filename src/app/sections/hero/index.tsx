@@ -13,6 +13,7 @@ import  {CanvasWithMacModel}  from "./mac-model";
 // import { Tai_Heritage_Pro } from "next/font/google";
 import Pyro from "../../../assets/pyro.png"
 
+
 export const Hero = () => {
   // const isMobileSize = useMedia("(max-width: 768px)");
 
@@ -207,11 +208,11 @@ export const Hero = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <image
-                  // x="161"  
-                  // y="-30"   
+                  x="161"  
+                  y="-30"   
                   width="80"
                   height="120"
-                  src={Pyro}
+                  xlinkHref={Pyro}
                 />
               </svg>
             </Scrollytelling.Animation>
@@ -231,9 +232,9 @@ export const Hero = () => {
             </pre>
             <div className="button">
                     
-             {/* <Link  href="/sections/registration"> */}
+             <a  href="/sections/registration">
               GET YOUR TICKETS NOW
-               {/* </Link>                */}
+               </a>               
                           
             </div>
           </div>

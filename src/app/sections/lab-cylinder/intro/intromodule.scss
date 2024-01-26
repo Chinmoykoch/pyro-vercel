@@ -60,12 +60,12 @@
 .title {
   position: relative;
   z-index: 1;
-  font-size: tovw(128px);
+  font-size: 128px;
   font-weight: 900;
   line-height: 0.91;
-  max-width: tovw(1551px);
+  max-width: tovw(155px);
   margin-top: tovw(52px);
-  margin-left: auto;
+  margin-left: 3em;
   margin-right: auto;
 
   @media screen and (max-width: 800px) {
@@ -75,10 +75,11 @@
     padding: 0 tovw(16px, "mobile");
     max-width: unset;
   }
+  
 }
-
+  
 .subtitle {
-  font-size: tovw(32px);
+  font-size: tovw(36px);
   letter-spacing: -0.005em;
   margin-top: tovw(64px);
   max-width: tovw(750px);

@@ -1,10 +1,8 @@
-"use client";
-
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import SMILE_IMAGE from "../../../../public/images/parallax/smile.png";
 import PC_IMAGE from "../../../../public/images/parallax/pc.png";
 
-import s from "./last-parallax.module.scss";
+import  "./last-parallaxmodule.scss";
 
 export const LastParallax = () => {
   return (
@@ -12,7 +10,7 @@ export const LastParallax = () => {
       start="top bottom"
       scrub={0.75}
     >
-      <section className={s["section"]}>
+      <section className="section">
         <div className="wrapper">
           <Scrollytelling.Waypoint
             at={50}
@@ -35,16 +33,16 @@ export const LastParallax = () => {
           />
           <img
             alt="PC"
-            className={s["pc"]}
+            className="pc"
             src={PC_IMAGE}
-            placeholder="blur"
+            // placeholder="blur"
             id="pc-image"
           />
           <img
             alt="Smile"
-            className={s["smile"]}
+            className="smile"
             src={SMILE_IMAGE}
-            placeholder="blur"
+            // placeholder="blur"
             id="smile-image"  
           />
           <Scrollytelling.Animation
@@ -62,7 +60,7 @@ export const LastParallax = () => {
               ],
             }}
           >
-            <h2 className={s["title"]}>
+            <h2 className="title">
               THAT&apos;S ALL, <br />
               FOLKS
             </h2>
