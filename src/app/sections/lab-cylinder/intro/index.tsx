@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import * as Scrollytelling from "~/lib/scrollytelling-client";
+import * as Scrollytelling from "@bsmnt/scrollytelling";
 
 // import Pyro from "../../../../../public/pyro.png"
 

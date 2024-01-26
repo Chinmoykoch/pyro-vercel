@@ -1,4 +1,4 @@
-import * as Scrollytelling from "~/lib/scrollytelling-client";
+import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./horizontal-marquee.module.scss";
 import { forwardRef } from "react";
 
@@ -109,7 +109,7 @@ const WorldSvg = forwardRef<SVGSVGElement>((_, ref) => {
      y="-140"
      width="900"
      height="700"
-     xlinkHref={Logo.src}
+     xlinkHref={Logo}
      />
      
     </svg>

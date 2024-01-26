@@ -1,13 +1,13 @@
 "use client";
 
-import Image from "next/image";
+
 import bsmtTeamImg from "../../../../public/footer/basement-team-footer.jpg";
-import * as Scrollytelling from "~/lib/scrollytelling-client";
+import * as Scrollytelling from "@bsmnt/scrollytelling";
 import QRImg from "../../../../public/footer/QR.svg";
 import confetti from "canvas-confetti";
 
 import s from "./footer.module.scss";
-import Link from "next/link";
+
 import { DottedDiv } from "../../components/dotted-container";
 import basementTeamSVG from "../../../../public/footer/basement-team.svg";
 import { useMedia } from "../../../hooks/use-media";
@@ -25,7 +25,7 @@ export const Footer = () => {
       <footer className={s.footer}>
         <PreFooter />
         <div className={s["imgs-container"]}>
-          <Image
+          <img
             className={s["team-img"]}
             src={bsmtTeamImg}
             alt="Basement Team"
@@ -44,7 +44,7 @@ export const Footer = () => {
               }}
             >
               <a href={ghHref} target="_blank" rel="noreferrer">
-                <Image className={s.QR} src={QRImg} alt="QR" />
+                <img className={s.QR} src={QRImg} alt="QR" />
               </a>
             </Scrollytelling.Animation>
           </div>
@@ -54,7 +54,7 @@ export const Footer = () => {
         {/* <div className={s["footer-heading-text"]}>
           Pyro Team
           </div> */}
-        <Image
+        <img
           className={s["footer-heading-text"]}
           src={basementTeamSVG}
           alt="basement team"
@@ -66,14 +66,14 @@ export const Footer = () => {
               {socials.map((social, idx) => (
                 <li key={idx}>
                   {idx !== 0 && <span>&nbsp;—&nbsp;</span>}
-                  <Link
+                  {/* <Link
                     className="link"
                     href={social.url}
                     target="_blank"
                     rel="noreferrer"
-                  >
+                  > */}
                     {social.name}
-                  </Link>
+                  {/* </Link> */}
                 </li>
               ))}
             </ul>
@@ -84,14 +84,14 @@ export const Footer = () => {
               {devs.map((dev, idx) => (
                 <li key={idx}>
                   {idx !== 0 && <span>&nbsp;—&nbsp;</span>}
-                  <Link
+                  {/* <Link
                     className="link"
                     href={dev.url}
                     target="_blank"
                     rel="noreferrer"
-                  >
+                  > */}
                     {dev.name}
-                  </Link>
+                  {/* </Link> */}
                 </li>
               ))}
             </ul>
@@ -165,7 +165,7 @@ const PreFooter = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Image className={s["QR-mobile"]} src={QRImg} alt="QR" />
+          <img className={s["QR-mobile"]} src={QRImg} alt="QR" />
         </a>
       </div>
     </div>

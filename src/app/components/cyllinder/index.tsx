@@ -1,14 +1,14 @@
-"use client";
+
 import { gsap } from "gsap";
-import * as Scrollytelling from "~/lib/scrollytelling-client";
-import Image from "next/image";
+import * as Scrollytelling from "@bsmnt/scrollytelling";
+
 
 import s from "./cyllinder.module.scss";
 import clsx from "clsx";
 import { useMapToCylinder } from "./helpers";
 import { Experiment } from "../../../lib/types";
 import Link from "next/link";
-import { useViewportSize } from "~/hooks/use-viewport";
+import { useViewportSize } from "../../../hooks/use-viewport";
 
 const progress = { value: 0 };
 
@@ -87,7 +87,7 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
 
 
                       {/* image src */}
-                        <Image
+                        <img
                           draggable={false}
                           className={clsx("image", s["image"])}
                           src={experiment.og}

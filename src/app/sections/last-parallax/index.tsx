@@ -1,7 +1,6 @@
 "use client";
 
-import * as Scrollytelling from "~/lib/scrollytelling-client";
-import Image from "next/image";
+import * as Scrollytelling from "@bsmnt/scrollytelling";
 import SMILE_IMAGE from "../../../../public/images/parallax/smile.png";
 import PC_IMAGE from "../../../../public/images/parallax/pc.png";
 
@@ -34,14 +33,14 @@ export const LastParallax = () => {
               duration: 1.2,
             }}
           />
-          <Image
+          <img
             alt="PC"
             className={s["pc"]}
             src={PC_IMAGE}
             placeholder="blur"
             id="pc-image"
           />
-          <Image
+          <img
             alt="Smile"
             className={s["smile"]}
             src={SMILE_IMAGE}
