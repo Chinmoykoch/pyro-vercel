@@ -2,7 +2,6 @@ import * as Scrollytelling from "@bsmnt/scrollytelling";
 
 import  "./falling-capsmodule.scss";
 import  CapsModel  from "./caps";
-import { Canvas } from "@react-three/fiber";
 import { useMemo } from "react";
 
 const splitText = (text: string, wordClass?: string) => {
@@ -48,8 +47,9 @@ export const FallingCaps = () => {
       <section className="spacer">
         <div className="pin">
           <div className="canvas-container">
-            
+            <div className="model">
               <CapsModel />
+              </div>
           </div>
 
           <p className="paragraph">
