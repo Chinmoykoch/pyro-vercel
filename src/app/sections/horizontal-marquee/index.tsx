@@ -1,5 +1,5 @@
-import * as Scrollytelling from "~/lib/scrollytelling-client";
-import s from "./horizontal-marquee.module.scss";
+import * as Scrollytelling from "@bsmnt/scrollytelling";
+import   "./horizontal-marqueemodule.scss";
 import { forwardRef } from "react";
 
 import Logo from "../../../../public/logo.png"
@@ -14,8 +14,8 @@ export const HorizontalMarquee = () => {
     <Scrollytelling.Root
       start="top top+=300px"
     >
-      <section className={s.section}>
-        <div className={s.pinned}>
+      <section className="section">
+        <div className="pinned">
           <Scrollytelling.Animation
             tween={{
               start: 0,
@@ -23,7 +23,7 @@ export const HorizontalMarquee = () => {
               from: { xPercent: 98, ease: "linear" },
             }}
           >
-            <div className={s.animated}>
+            <div className="animated">
               <Scrollytelling.Animation
                 tween={{
                   start: 90,
@@ -101,17 +101,16 @@ const WorldSvg = forwardRef<SVGSVGElement>((_, ref) => {
       viewBox="0 0 699 467"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={s.worldSvg}
+      className="worldSvg"
       ref={ref}
     >
-     <image 
-     x="-100"
-     y="-140"
-     width="900"
-     height="700"
-     xlinkHref={Logo.src}
-     />
-     
+      <image
+        x="-100"
+        y="-140"
+        width="900"
+        height="700"
+        xlinkHref={Logo}
+      />
     </svg>
   );
 });
