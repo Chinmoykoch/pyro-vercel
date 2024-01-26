@@ -2,9 +2,9 @@
 
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 // import React, { useLayoutEffect, useRef } from 'react';
-import s from "./hero.module.scss";
+import "./heromodule.scss";
 import { LogoBasement } from "../../logos/logo";
-// import  {CanvasWithMacModel}  from "./mac-model";
+import  {CanvasWithMacModel}  from "./mac-model";
 
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import gsap from 'gsap';
@@ -159,21 +159,21 @@ export const Hero = () => {
   return (
     <Scrollytelling.Root
 
-      // defaults={{ ease: "linear" }}
+      defaults={{ ease: "power2.inOut" }}
 
     >
       <Scrollytelling.Pin
         childHeight={"100vh"}
         pinSpacerHeight={"300vh"}
-        pinSpacerClassName={s["pin-spacer"]}
+        pinSpacerClassName="pin-spacer"
       >
         <header className="header">
           
-            <LogoBasement className={s["logo"]} />
+            <LogoBasement className="logo" />
           
 
           <svg
-            className={s["star"]}
+            className="star"
             fill="none"
             viewBox="0 0 679 120"
             xmlns="http://www.w3.org/2000/svg"
@@ -201,12 +201,12 @@ export const Hero = () => {
               }}
             >
                <svg
-                className={s["logo"]}
+                className="logo"
                 fill="none"
                 viewBox="0 0 400 50"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <img
+                <image
                   // x="161"  
                   // y="-30"   
                   width="80"
@@ -224,12 +224,12 @@ export const Hero = () => {
               </clipPath>
             </defs>
           </svg>
-          <div className={s["cta"]}>
+          <div className="cta">
             
             <pre>
               <code>To get the grooving experience </code>
             </pre>
-            <div className={s["cta--buttons"]}>
+            <div className="button">
                     
              {/* <Link  href="/sections/registration"> */}
               GET YOUR TICKETS NOW
@@ -239,35 +239,43 @@ export const Hero = () => {
           </div>
         </header>
 
-        <section className={s["section"]}>
-          <div className={s["model-container"]}>
-            {/* <CanvasWithMacModel /> */}
+        <section className="section">
+          <div className="model-container">
+            <CanvasWithMacModel />
           </div>
 
           <div className="">
-            <div className={s["content"]}>
-              <div className={s["svg__container"]}>
+            <div className="content">
+              <div className="svg__container">
 
                 {/* <AnimatedText/> */}
                
-                <div className={s["svg-make"]}> {/* Add multiple classes */}
+                <div className="svg-make"> {/* Add multiple classes */}
                 <Scrollytelling.Animation
             tween={{
               start: 0,
               end: 90,
-              from: { xPercent: -58, ease: "linear", opacity:0 },
+              from: { xPercent: -58, ease: "power2.inout", opacity:0 },
             }}
           >
-        <h1 className={s["when"]}>
+        <div className="when">
           WHEN
-        </h1>
+        </div>
         </Scrollytelling.Animation>
-        <h1>enchantment</h1>
+        <Scrollytelling.Animation
+            tween={{
+              start: 0,
+              end: 90,
+              from: { xPercent: -21, ease: "power2.inout", opacity:1 },
+            }}
+          >
+        <div>enchantment</div>
+        </Scrollytelling.Animation>
       </div>
 
                 {/* <Mystery/> */}
 
-                <div className={s["svg-coolshit"]}> {/* Add multiple classes */}
+                <div className="svg-coolshit"> {/* Add multiple classes */}
                 <Scrollytelling.Animation
             tween={{
               start: 0,
@@ -275,55 +283,55 @@ export const Hero = () => {
               from: { yPercent: 58, ease: "power2.inout", opacity:0 },
             }}
           >
-        <h1>
+        <div>
           meets
-        </h1>
+        </div>
         </Scrollytelling.Animation>
-        <div className={s["mystery"]}><h1 className={s["mystry"]}>mystery</h1></div>
-        
+{/* Add multiple classes */}
+                <Scrollytelling.Animation
+            tween={{
+              start: 0,
+              end: 90,
+              from: { xPercent: -5, ease: "power2.inout", opacity:1 },
+            }}
+          >
+        <div className="mystery"><div className="mystry">mystery</div></div>
+        </Scrollytelling.Animation>
       </div>
                 {/* <Pyrokinesis/> */}
 
-                <div className={s["svg-performs"]}> {/* Add multiple classes */}
-        <h1>Pyrokinesis</h1>
+                <div className="svg-performs"> {/* Add multiple classes */}
+                <Scrollytelling.Animation
+            tween={{
+              start: 0,
+              end: 90,
+              from: { xPercent: 34, ease: "power2.inout", opacity:1 },
+            }}
+          >
+        <div>Pyrokinesis</div>
+        </Scrollytelling.Animation>
         <Scrollytelling.Animation
             tween={{
               start: 0,
               end: 90,
-              from: { ease: "power2.inout", opacity:0 },
+              from: {ease: "power2.inout", opacity:0 },
             }}
           >
-        <h1 className={s["year"]}>
+        <div className="year">
           2024
-        </h1>
+        </div>
         </Scrollytelling.Animation>
       </div>
                 
               </div>
               <div>
               </div>
-              <div className={s["footer"]}>
-                <p>
-                Pyrokinesis, a thrilling celebration that showcases the fervor of tradition and innovation. Pyrokinesis, the annual cultural extravaganza, paints the picture of Assam with charm and mystery. Enchanto Enigma, this year's ethereal theme, weaves a captivating tale of wonders secret. It invites participants into a world where mystery blends with the allure of discovery.
-                </p>
-                <svg
-                  viewBox="0 0 24 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14 0.226562L24 6.00007L14 11.7736L14 7.00006L0 7.00006V5.00006L14 5.00007L14 0.226562Z"
-                    fill="white"
-                  />
-                </svg>
+              <div className="footer">
+                <p></p>  
                 <p>
                 Pyrokinesis casts a spellbinding aura. It's a testament to the fusion of tradition and modernity,where the flames of creativity ignite hearts and minds, leaving an indelible mark on all who revel in its enchanting embrace.
-                  <br /> just for fun.
                 </p>
-                <p>
-                  Sometimes size doesn&apos;t matter. we work for big & small
-                  non-stoppable visionaries. here&apos;s love for them all.
-                </p>
+                <p></p>
               </div>
             </div>
           </div>

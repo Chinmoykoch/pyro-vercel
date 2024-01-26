@@ -111,7 +111,7 @@
 
 .section {
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   // height: 100vh;
   padding-top: tovw(28px, "desktop-large", 24px);
 }
@@ -119,14 +119,15 @@
 .model-container {
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 39%;
   right: 0;
   width: tovw(500px, "desktop-large", 200px);
   height: tovw(500px, "desktop-large", 200px);
   transform: translateY(-50%);
 
   @media screen and (max-width: 800px) {
-    top: 60%;
+    top: 40%;
+    transform: translateX(-35%);
   }
 }
 
@@ -156,12 +157,13 @@
     font-family: "Kanit";
     display: flex;
     gap: 3rem;
-    font-size: 9vw;
+    font-size: 9.2vw;
     font-weight: 900;
     right: 0;
     bottom: 0;
     width: tovw(543px);
     height: tovw(183px);
+    
 
        .when{
         
@@ -182,8 +184,8 @@
 
     .svg-coolshit {
       position: relative;
-      top: -35%;
-      font-size: 7.8vw;
+      top: 0%;
+      font-size: 9.2vw;
       font-family: "kanit";
       display: flex;
       gap:3rem;
@@ -204,8 +206,8 @@
 
   .svg-performs {
     position: relative;
-    top: -90%;
-    font-size: 10vw;
+    top: 0%;
+    font-size: 9.2vw;
     font-family: "Kanit";
     display: flex;
     gap:3rem;
@@ -229,16 +231,22 @@
 .footer {
   display: grid;
   column-gap: tovw(24px);
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3,  1fr);
   grid-template-rows: 1fr;
-  margin-top: tovw(24px, "desktop", 524px);
+  margin-top: tovw(24px, "desktop", 424px);
+  padding-right: 15rem;
+  padding-left: 20rem;
+  padding-top: 5rem;
   
 
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+    padding-right: 1.5rem;
+    padding-left:  3rem;
 
-    margin-top: tovw(24px, "tablet", 124px);
+    margin-top: tovw(24px, "tablet", 224px);
 
     gap: tovw(24px, "desktop", 24px);
   }
