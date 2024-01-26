@@ -1,17 +1,17 @@
 
 
 import * as Scrollytelling from "@bsmnt/scrollytelling";
-import React, { useLayoutEffect, useRef } from 'react';
+// import React, { useLayoutEffect, useRef } from 'react';
 import s from "./hero.module.scss";
 import { LogoBasement } from "../../logos/logo";
 // import  {CanvasWithMacModel}  from "./mac-model";
 
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import gsap from 'gsap';
-import { toVw } from "../../../lib/utils";
-import { useMedia } from "../../../hooks/use-media";
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import gsap from 'gsap';
+// import { toVw } from "../../../lib/utils";
+// import { useMedia } from "../../../hooks/use-media";
 // import { Tai_Heritage_Pro } from "next/font/google";
-import Pyro from "../../../../public/pyro.png"
+import Pyro from "../../../assets/pyro.png"
 
 export const Hero = () => {
   // const isMobileSize = useMedia("(max-width: 768px)");
@@ -167,10 +167,10 @@ export const Hero = () => {
         pinSpacerHeight={"300vh"}
         pinSpacerClassName={s["pin-spacer"]}
       >
-        <header className={s["header"]}>
-          {/* <Link title="basement scrollytelling" href="/">
+        <header className="header">
+          
             <LogoBasement className={s["logo"]} />
-          </Link> */}
+          
 
           <svg
             className={s["star"]}
@@ -231,7 +231,9 @@ export const Hero = () => {
             </pre>
             <div className={s["cta--buttons"]}>
                     
-             {/* <Link  href="/sections/registration">GET YOUR TICKETS NOW </Link>                */}
+             {/* <Link  href="/sections/registration"> */}
+              GET YOUR TICKETS NOW
+               {/* </Link>                */}
                           
             </div>
           </div>
@@ -248,7 +250,7 @@ export const Hero = () => {
 
                 {/* <AnimatedText/> */}
                
-                <div className={`${s["svg-make"]}`}> {/* Add multiple classes */}
+                <div className={s["svg-make"]}> {/* Add multiple classes */}
                 <Scrollytelling.Animation
             tween={{
               start: 0,
@@ -256,8 +258,8 @@ export const Hero = () => {
               from: { xPercent: -58, ease: "linear", opacity:0 },
             }}
           >
-        <h1 className="when">
-          when
+        <h1 className={s["when"]}>
+          WHEN
         </h1>
         </Scrollytelling.Animation>
         <h1>enchantment</h1>
@@ -265,7 +267,7 @@ export const Hero = () => {
 
                 {/* <Mystery/> */}
 
-                <div className={` ${s["svg-coolshit"]}`}> {/* Add multiple classes */}
+                <div className={s["svg-coolshit"]}> {/* Add multiple classes */}
                 <Scrollytelling.Animation
             tween={{
               start: 0,
@@ -277,12 +279,12 @@ export const Hero = () => {
           meets
         </h1>
         </Scrollytelling.Animation>
-        <div className="mystery"><h1 className="mystry">mystery</h1></div>
+        <div className={s["mystery"]}><h1 className={s["mystry"]}>mystery</h1></div>
         
       </div>
                 {/* <Pyrokinesis/> */}
 
-                <div className={`${s["svg-performs"]}`}> {/* Add multiple classes */}
+                <div className={s["svg-performs"]}> {/* Add multiple classes */}
         <h1>Pyrokinesis</h1>
         <Scrollytelling.Animation
             tween={{
@@ -291,7 +293,7 @@ export const Hero = () => {
               from: { ease: "power2.inout", opacity:0 },
             }}
           >
-        <h1 className="year">
+        <h1 className={s["year"]}>
           2024
         </h1>
         </Scrollytelling.Animation>

@@ -1,4 +1,5 @@
-@import "../../css/helpers";
+@import "../../css/helpers.scss";
+@import "../../../index.scss";
 
 
 
@@ -110,7 +111,7 @@
 
 .section {
   position: relative;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   // height: 100vh;
   padding-top: tovw(28px, "desktop-large", 24px);
 }
@@ -163,6 +164,7 @@
     height: tovw(183px);
 
        .when{
+        
         position: relative;
        }
     // width: tovw(924px);
@@ -182,16 +184,14 @@
       position: relative;
       top: -35%;
       font-size: 7.8vw;
-      font-family: "Press Start 2P";
+      font-family: "kanit";
       display: flex;
       gap:3rem;
       width: tovw(543px);
       height: tovw(183px);
 
 
-      .mystery{
-        background: #ff4d00;
-      }
+
 
 
       @media screen and (max-width: 800px) {
@@ -258,7 +258,7 @@
 
   svg {
     width: tovw(24px);
-    height: tovw(12px);
+    height: tovw(12px); 
 
     grid-area: 1 / 7 / 2 / 8;
 

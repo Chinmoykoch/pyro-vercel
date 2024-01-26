@@ -1,5 +1,11 @@
-@import "./helpers";
-@import "./reset.css";
+@import "./app/css/helpers.scss";
+@import ".//app/css/helpers.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 
 :root {
@@ -38,7 +44,7 @@ html {
 
 body {
   font-family: var(--font-basement-grotesque, var(--font-system));
-  transition: opacity #{$duration / 3 + "s"} ease-in;
+  transition: opacity calc(#{$duration} / 3) + "s" ease-in;
 }
 
 body.inspect * {

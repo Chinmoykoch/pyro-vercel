@@ -2,7 +2,7 @@
 
 import './App.css'
 import { Hero } from './app/sections/hero'
-// import { FallingCaps } from './app/sections/falling-caps'
+import { FallingCaps } from './app/sections/falling-caps'
 // import { HorizontalMarquee } from './app/sections/horizontal-marquee'
 // import { LabIntro } from './app/sections/lab-cylinder/intro'
 // import { LabCylinder } from './app/sections/lab-cylinder'
@@ -15,8 +15,8 @@ function App() {
   return (
     <>
       <Hero />
-      {/* <FallingCaps />
-      <HorizontalMarquee />
+      <FallingCaps />
+      {/* <HorizontalMarquee />
       <LabIntro />
 
       <LabCylinder />

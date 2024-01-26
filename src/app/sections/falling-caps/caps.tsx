@@ -1,4 +1,4 @@
-import * as Scrollytelling from "~/lib/scrollytelling-client";
+import * as Scrollytelling from "@bsmnt/scrollytelling";
 import React, { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Float, OrbitControls, useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
