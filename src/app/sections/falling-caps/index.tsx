@@ -1,8 +1,6 @@
-"use client";
-
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 
-import s from "./falling-caps.module.scss";
+import  "./falling-capsmodule.scss";
 import  CapsModel  from "./caps";
 import { Canvas } from "@react-three/fiber";
 import { useMemo } from "react";
@@ -16,7 +14,7 @@ const splitText = (text: string, wordClass?: string) => {
     return (
       <span className={wordClass} key={i}>
         {word}
-        {i < wordsArray.length - 1 && " "}
+        {i < wordsArray.length  -1 && " "}
         {hasLineBreak && <br />}
       </span>
     );
@@ -26,8 +24,7 @@ const splitText = (text: string, wordClass?: string) => {
 };
 
 
-
-const lines = ["A spellbinding ", " narrative of enigmatic wonders", "AWAITS..."];
+const lines = ["A SPELLBINDING ", " NARRATIVE OF ENIGMATIC WONDERS", "AWAITS..."];
 
 export const FallingCaps = () => {
   const splittedText = useMemo(
@@ -37,7 +34,7 @@ export const FallingCaps = () => {
           const isLast = lineIdx === lines.length - 1;
           const wordElements = splitText(
             line + "\n",
-            isLast ? s["highlight"] : undefined
+            isLast ? "highlight" : undefined
           );
 
           return wordElements;
@@ -48,14 +45,14 @@ export const FallingCaps = () => {
 
   return (
     <Scrollytelling.Root end="bottom bottom" >
-      <section className={s["spacer"]}>
-        <div className={s["pin"]}>
-          <div className={s["canvas-container"]}>
+      <section className="spacer">
+        <div className="pin">
+          <div className="canvas-container">
             
               <CapsModel />
           </div>
 
-          <p className={s["paragraph"]}>
+          <p className="paragraph">
             <Scrollytelling.Stagger
               overlap={0}
               tween={{

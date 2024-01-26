@@ -1,5 +1,5 @@
+@import "../../css/reset.css";
 @import "../../css/helpers.scss";
-@import "../../../index.scss";
 
 
 
@@ -119,7 +119,7 @@
 .model-container {
   position: absolute;
   z-index: 100;
-  top: 39%;
+  top: 4.5%;
   right: 0;
   width: tovw(500px, "desktop-large", 200px);
   height: tovw(500px, "desktop-large", 200px);

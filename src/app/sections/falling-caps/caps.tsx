@@ -25,20 +25,20 @@ const Computers = () => {
     <mesh>
     <group dispose={null} scale={0.6} ref={innerRef}>
       <group position={[0, 2, 0]} rotation={[0.45, -0.51, -0.03]}>
-        <hemisphereLight intensity={0.15} groundColor="black" />
+        <hemisphereLight intensity={1}  groundColor="black" />
         <spotLight
-          position={[-20, 50, 10]}
+          position={[0, 50, 10]}
           angle={0.12}
           penumbra={1}
           intensity={1}
-          castShadow
-          shadow-mapSize={1024}
+          // castShadow
+          // shadow-mapSize={1024}
         />
-        <pointLight intensity={1} />
+        <pointLight intensity={6} />
         <primitive
           object={computer.scene}
           scale={1.15}
-          position={[0, -0, -0]}
+          position={[0, 2, 0]}
           rotation={[-0.1, 0.5, -0]}
         />
       </group>
