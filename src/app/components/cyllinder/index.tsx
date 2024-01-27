@@ -3,11 +3,11 @@ import { gsap } from "gsap";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 
 
-import s from "./cyllinder.module.scss";
+import "./cyllindermodule.scss";
 import clsx from "clsx";
 import { useMapToCylinder } from "./helpers";
 import { Experiment } from "../../../lib/types";
-import Link from "next/link";
+
 import { useViewportSize } from "../../../hooks/use-viewport";
 
 const progress = { value: 0 };
@@ -16,7 +16,7 @@ type CyllinderProps = {
   experiments: Experiment[];
 };
 
-const itemHeight = "5vh";
+const itemHeight = "7vh";
 const itemsInViewAtOnce = 5;
 const itemsPadding = 4;
 
@@ -51,13 +51,13 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
       }}
     >
       <div
-        className={s["section"]}
+        className="csection"
         style={{
           height: pinSpacerHeight,
         }}
       >
-        <div className={s["pin"]}>
-          <div className={s["cyllinder"]}>
+        <div className="cpin">
+          <div className="cyllinder">
             <Scrollytelling.Animation
               tween={{
                 start: 0,
@@ -74,10 +74,10 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
               // const author = experiment.contributors[0];
 
               return (
-                <div className={s["item"]} data-experiment={i} key={i}>
+                <div className={"item"} data-experiment={i} key={i}>
                   {/* title is the name   */}
-                  <h2 className={s["title"]}>{experiment.title}</h2>
-                  <div className={s["info"]}>
+                  <h2 className="title">{experiment.title}</h2>
+                  <div className="info">
                     {/* <Link
                       className={s["link"]}
                       href={"https://lab.basement.studio" + experiment.href}
@@ -89,7 +89,7 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
                       {/* image src */}
                         <img
                           draggable={false}
-                          className={clsx("image", s["image"])}
+                          className={clsx("image", "image")}
                           src={experiment.og}
                           width={760}
                           height={496}
