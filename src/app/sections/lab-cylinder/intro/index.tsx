@@ -4,7 +4,7 @@ import * as Scrollytelling from "@bsmnt/scrollytelling";
 // import Pyro from "../../../../../public/pyro.png"
 
 import "./intromodule.scss";
-import "./intromodule.css";
+// import "./intromodule.css";
 
 export const LabIntro = () => {
   return (
@@ -71,7 +71,7 @@ export const LabIntro = () => {
             movementY: { value: -40, unit: "px" },
           }}
         >
-          <h2 className="title">Mystify. Explore. Evoke. </h2>
+          <h2 className="title">MYSTIFY. EXPLORE. EVOKE. </h2>
         </Scrollytelling.Parallax>
         <p className="subtitle">
           <svg

@@ -1,14 +1,14 @@
 import { Experiment } from "../../../lib/types";
 import { Cyllinder } from "../../components/cyllinder";
 
-import codewarsImg from '../../../../public/images/cylinder_img/codewars.jpg'
-import constellateImg from '../../../../public/images/cylinder_img/constellate.jpg'
-import cosplayImg from '../../../../public/images/cylinder_img/cosplay.jpg'
-import robowarImg from '../../../../public/images/cylinder_img/robowar.jpg'
-import stockwarzImg from '../../../../public/images/cylinder_img/stockwarz.jpg'
-import streetbeatsImg from '../../../../public/images/cylinder_img/streetbeats.jpg'
-import visavisImg from '../../../../public/images/cylinder_img/visavis.jpg'
-import culturalnightImg from '../../../../public/images/cylinder_img/culturalnight2.jpg'
+import codewarsImg from '../../../assets/cylinder_img/codewars.jpg'
+import constellateImg from '../../../assets/cylinder_img//constellate.jpg'
+import cosplayImg from '../../../assets/cylinder_img/cosplay.jpg'
+import robowarImg from '../../../assets/cylinder_img/robowar.jpg'
+import stockwarzImg from '../../../assets/cylinder_img/stockwarz.jpg'
+// import streetbeatsImg from '../../../../public/images/cylinder_img/streetbeats.jpg'
+import visavisImg from '../../../assets/cylinder_img/visavis.jpg'
+import culturalnightImg from '../../../assets/cylinder_img/culturalnight2.jpg'
 
 const experiments = [
   {
