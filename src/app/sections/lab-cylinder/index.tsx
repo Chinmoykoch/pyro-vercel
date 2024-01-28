@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+
 import Layout from '../../components/Layout/index';
 import styles from './Home.module.scss';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
 import ProjectHomePage from '../../components/ProjectHomePage/index';
-import { LabIntro } from './intro';
 
-const cylinder = (): JSX.Element => {
+
+const Event = (): JSX.Element => {
   const [displayMouse, setDisplayMouse] = useState(true);
 
   // // Fonction pour enlever l'animation de la souris après un certain temps
@@ -108,4 +108,4 @@ const cylinder = (): JSX.Element => {
   );
 };
 
-export default cylinder;
+export default Event;

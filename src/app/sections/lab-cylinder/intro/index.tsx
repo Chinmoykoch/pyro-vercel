@@ -99,15 +99,15 @@ export const LabIntro = () => {
             tween={[
               {
                 start: 0,
-                end: 100,
+                end: 90,
                 target: `.${"marquee1"} [data-marquee-animation-container]`,
-                to: { x: -1000, ease: "linear" },
+                to: { x: -700, ease: "linear" },
               },
               {
                 start: 0,
-                end: 100,
+                end: 90,
                 target: `.${"marquee2"} [data-marquee-animation-container]`,
-                to: { x: 1000, ease: "linear" },
+                to: { x: 200, ease: "linear" },
               },
             ]}
           />
@@ -169,25 +169,3 @@ const LabSvg = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-{/* <svg
-viewBox="0 0 699 467"
-fill="none"
-xmlns="http://www.w3.org/2000/svg"
-ref={ref}
->
-<image 
-x="0"
-y="0"
-width="50"
-height="50"
-xlinkHref={Pyro.src}
-/> */}
