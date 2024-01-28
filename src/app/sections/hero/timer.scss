@@ -8,18 +8,22 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
+    // font-weight: 400;
     gap: 10rem;
     /* width: 100%; */
     position: absolute;
+    left:0;
+    top: 18.2rem;
 
     @media screen and (max-width: 800px) {
-        gap: 1rem;
+        gap: 2.4rem;
     }
 
 }
 
 .countdown-item {
+    font-family: "kanit";
+    font-weight: 200;
     color: #d1d1d1;
     font-size: 6rem;
     display: flex;
@@ -29,6 +33,10 @@
     position: relative;
     width: 100px;
     height: 100px;
+    line-height: 2;
+    @media screen and (max-width: 800px) {
+        font-size: 4.5rem;
+    }
 }
 
 

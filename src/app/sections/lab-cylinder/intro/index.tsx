@@ -107,7 +107,7 @@ export const LabIntro = () => {
                 start: 0,
                 end: 90,
                 target: `.${"marquee2"} [data-marquee-animation-container]`,
-                to: { x: 200, ease: "linear" },
+                to: { x: -300, ease: "linear" },
               },
             ]}
           />

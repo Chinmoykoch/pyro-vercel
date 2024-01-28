@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
-import "./timer.css"
+import "./timer.scss"
 
 interface CountdownProps {
-    timeTillDate: "05 26 2019, 6:00 am";
+    timeTillDate: "02 21 2024, 12:00 am";
     timeFormat: "MM DD YYYY, h:mm a";
 }
 

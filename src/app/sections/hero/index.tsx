@@ -193,7 +193,7 @@ export const Hero = () => {
               <div className="footer">
                 {/* <p></p>   */}
 
-                <Countdown timeTillDate={"05 26 2019, 6:00 am"} timeFormat={"MM DD YYYY, h:mm a"} /> 
+                <Countdown timeTillDate={"02 21 2024, 12:00 am"} timeFormat={"MM DD YYYY, h:mm a"} /> 
                 {/* <p>
                 Pyrokinesis casts a spellbinding aura. It's a testament to the fusion of tradition and modernity,where the flames of creativity ignite hearts and minds, leaving an indelible mark on all who revel in its enchanting embrace.
                 </p> */}
