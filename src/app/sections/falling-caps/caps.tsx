@@ -113,7 +113,9 @@ const Computers = () => {
       });
 
   return (
-    <mesh ref={innerRef}>
+    <group ref={innerRef}>
+    <mesh >
+      
       <hemisphereLight intensity={1.5} groundColor='black' />
       <spotLight
         position={[1, 1,  0]}
@@ -132,6 +134,7 @@ const Computers = () => {
        rotation={[0, 0.6, -0]}
       />
     </mesh>
+    </group>
   );
 };
 
