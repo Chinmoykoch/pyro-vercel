@@ -6,8 +6,9 @@ import "./heromodule.scss";
 import { LogoBasement } from "../../logos/logo";
 import  {CanvasWithMacModel}  from "./mac-model";
 
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import gsap from 'gsap';
+import Countdown from "./timer";
+
+
 // import { toVw } from "../../../lib/utils";
 // import { useMedia } from "../../../hooks/use-media";
 // import { Tai_Heritage_Pro } from "next/font/google";
@@ -15,145 +16,7 @@ import Pyro from "../../../assets/pyro.png"
 
 
 export const Hero = () => {
-  // const isMobileSize = useMedia("(max-width: 768px)");
 
-
-
-  // function AnimatedText() {
-  //   const text = useRef(null);
-  //   const mq = window.matchMedia("(max-width: 48em)");
-  
-  //   if(mq.matches){useLayoutEffect(() => {
-  //     gsap.registerPlugin(ScrollTrigger);
-  //     gsap.from(text.current, {
-  //       ease: "power2.in",
-  //       scrollTrigger: {
-  //         trigger: text.current,
-  //         scrub: true,
-  //         start: "top+=450px center",
-  //         end: "bottom+=890px 15%",
-
-  //       },
-  //       opacity: 0,
-  //       x: "-=100",
-  //     });
-  //   }, []);
-  // }else{
-  //   useLayoutEffect(() => {
-  //     gsap.registerPlugin(ScrollTrigger);
-  //     gsap.from(text.current, {
-  //       ease: "power2.in",
-  //       scrollTrigger: {
-  //         trigger: text.current,
-  //         scrub: true,
-  //         start: "top+=450px center",
-  //         end: "bottom+=990px 15%",
-
-  //       },
-  //       opacity: 0,
-  //       x: "-=100",
-  //     });
-  //   }, []);
-  // }
-    
-  
-  //   return (
-  //     <div className={`${s["svg-make"]}`}> {/* Add multiple classes */}
-  //       <h1 ref={text} className="when">
-  //         when
-  //       </h1>
-  //       <h1>enchantment</h1>
-  //     </div>
-  //   );
-  // }
-
-
-  // const Mystery = () => {
-  //   const text = useRef(null);
-
-
-  //     useLayoutEffect(() => {
-  //       gsap.registerPlugin(ScrollTrigger);
-  //       gsap.from(text.current, {
-  //         ease: "power2",
-  //         scrollTrigger: {
-  //           trigger: text.current,
-  //           scrub: true,
-  //           start: "top+=550px center",
-  //           end: "bottom+=900px center",
-  //         },
-  //         opacity: 0,
-  //         y: "+=20",
-  //       });
-  //     }, []);
-
-
-  
-   
-  
-  //   return (
-  //     <div className={` ${s["svg-coolshit"]}`}> {/* Add multiple classes */}
-  //       <h1 ref={text}>
-  //         meets
-  //       </h1>
-  //       <div className="mystery"><h1 className="mystry">mystery</h1></div>
-        
-  //     </div>
-  //   );
-  // }
-
-
-//   const Pyrokinesis = () => {
-//     const text = useRef(null);
-//     const mq = window.matchMedia("(max-width: 48em)");
-
-
-//     if(mq.matches){useLayoutEffect(() => {
-//       gsap.registerPlugin(ScrollTrigger);
-//       gsap.from(text.current, {
-//         ease: "power2.in",
-//         scrollTrigger: {
-//           trigger: text.current,
-//           scrub: true,
-//           start: "top+=450px center",
-//           end: "bottom+=890px 15%",
-//         },
-//         opacity: 0,
-//         // x: "+=100",
-//       });
-//     }, []);
-//   }else{useLayoutEffect(() => {
-//     gsap.registerPlugin(ScrollTrigger);
-//     gsap.from(
-//       text.current,
-      
-//       { 
-//         ease: "power2.in",
-//         scrollTrigger: {
-//           trigger: text.current,
-//           scrub: true,
-//           start: "top-=10vh center",
-//           end: "bottom+=1090vh center",
-          
-//         },
-//         opacity: 0,
-//         // x: "+=200",
-//       }
-//     );
-//   }, []);
-// }
-  
-    
-  
-//     return (
-//       <div className={`${s["svg-performs"]}`}> {/* Add multiple classes */}
-//         <h1>Pyrokinesis</h1>
-//         <h1 ref={text} className="year">
-//           2024
-//         </h1>
-//       </div>
-//     );
-//   };
 
 
 
@@ -232,7 +95,7 @@ export const Hero = () => {
             </pre>
             <div className="button">
                     
-             <a  href="/sections/registration">
+             <a  href="/registration">
               GET YOUR TICKETS NOW
                </a>               
                           
@@ -328,11 +191,13 @@ export const Hero = () => {
               <div>
               </div>
               <div className="footer">
-                <p></p>  
-                <p>
+                {/* <p></p>   */}
+
+                <Countdown timeTillDate={"05 26 2019, 6:00 am"} timeFormat={"MM DD YYYY, h:mm a"} /> 
+                {/* <p>
                 Pyrokinesis casts a spellbinding aura. It's a testament to the fusion of tradition and modernity,where the flames of creativity ignite hearts and minds, leaving an indelible mark on all who revel in its enchanting embrace.
-                </p>
-                <p></p>
+                </p> */}
+                {/* <p></p> */}
               </div>
             </div>
           </div>

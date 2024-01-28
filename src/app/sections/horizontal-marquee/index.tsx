@@ -30,7 +30,7 @@ export const HorizontalMarquee = () => {
                 tween={{
                   start: 90,
                   end: 100,
-                  to: { x: "=50vw", ease: "linear" },
+                  to: { x: "-=50vw", ease: "linear" },
                 }}
               >
                 <p>

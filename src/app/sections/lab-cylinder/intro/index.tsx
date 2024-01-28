@@ -99,15 +99,15 @@ export const LabIntro = () => {
             tween={[
               {
                 start: 0,
-                end: 100,
+                end: 90,
                 target: `.${"marquee1"} [data-marquee-animation-container]`,
                 to: { x: -700, ease: "linear" },
               },
               {
                 start: 0,
-                end: 100,
+                end: 90,
                 target: `.${"marquee2"} [data-marquee-animation-container]`,
-                to: { x: 500, ease: "linear" },
+                to: { x: 200, ease: "linear" },
               },
             ]}
           />

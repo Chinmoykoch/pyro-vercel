@@ -1,5 +1,3 @@
-"use client";
-
 
 import bsmtTeamImg from "../../../../public/footer/basement-team-footer.jpg";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
@@ -51,9 +49,6 @@ export const Footer = () => {
         </div>
 
 
-        {/* <div className={s["footer-heading-text"]}>
-          Pyro Team
-          </div> */}
         <img
           className={s["footer-heading-text"]}
           src={basementTeamSVG}
@@ -63,35 +58,23 @@ export const Footer = () => {
           <div>
             <span>social media</span>
             <ul>
-              {socials.map((social, idx) => (
-                <li key={idx}>
-                  {idx !== 0 && <span>&nbsp;—&nbsp;</span>}
-                  {/* <Link
-                    className="link"
-                    href={social.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  > */}
-                    {social.name}
-                  {/* </Link> */}
-                </li>
+              {socials.map((social, _index) => (
+                <li key={_index}>
+                {_index !== 0 && <span>&nbsp;—&nbsp;</span>}
+                <a href={social.url}>{social.name}</a>
+              </li>
+              
               ))}
             </ul>
           </div>
           <div>
             <span>Developed by</span>
             <ul>
-              {devs.map((dev, idx) => (
-                <li key={idx}>
-                  {idx !== 0 && <span>&nbsp;—&nbsp;</span>}
-                  {/* <Link
-                    className="link"
-                    href={dev.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  > */}
-                    {dev.name}
-                  {/* </Link> */}
+              {devs.map((dev, _index) => (
+                <li key={_index}>
+                  {_index !== 0 && <span>&nbsp;—&nbsp;</span>}
+                  <a href={dev.url}>{dev.name}</a>
+                   
                 </li>
               ))}
             </ul>
@@ -157,7 +140,7 @@ const PreFooter = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Book your tickets now!
+          Get your tickets now!
         </a>
         <a
           className={s["mobile-qr-link"]}
@@ -262,10 +245,7 @@ const Terminal = () => {
 };
 
 const socials = [
-  // {
-  //   name: "twitter",
-  //   url: "https://twitter.com/basementstudio",
-  // },
+  
   {
     name: "instagram",
     url: "https://www.instagram.com/pyrokinesis_aec/",
@@ -279,7 +259,7 @@ const socials = [
 const devs = [
   {
     name: "jyotirmoy",
-    url: "",
+    url: "https://www.instagram.com/jyotirmxy?igsh=MWhkMTVzcnFqbDVmNw==",
   },
   {
     name: "tirthankar",
@@ -287,7 +267,7 @@ const devs = [
   },
   {
     name: "chinmoy",
-    url: "",
+    url: "https://www.instagram.com/chinmoy_koch?igsh=czRpZWM5eTFnOXNr",
   },
 ]
 

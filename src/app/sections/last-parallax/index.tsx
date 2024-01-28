@@ -2,7 +2,7 @@ import * as Scrollytelling from "@bsmnt/scrollytelling";
 import SMILE_IMAGE from "../../../../public/images/parallax/smile.png";
 import PC_IMAGE from "../../../../public/images/parallax/pc.png";
 
-import  "./last-parallaxmodule.scss";
+import  s from"./last-parallax.module.scss";
 
 export const LastParallax = () => {
   return (
@@ -10,8 +10,8 @@ export const LastParallax = () => {
       start="top bottom"
       scrub={0.75}
     >
-      <section className="section">
-        <div className="wrapper">
+      <section className={s.section}>
+        <div className={s.wrapper}>
           <Scrollytelling.Waypoint
             at={50}
             tween={{
@@ -33,18 +33,28 @@ export const LastParallax = () => {
           />
           <img
             alt="PC"
-            className="pc"
+            className={s["pc"]}
             src={PC_IMAGE}
             // placeholder="blur"
             id="pc-image"
           />
           <img
             alt="Smile"
-            className="smile"
+            className={s["smile"]}
             src={SMILE_IMAGE}
             // placeholder="blur"
             id="smile-image"  
           />
+
+
+{/* <img
+            className={s["team-img"]}
+            src={bsmtTeamImg}
+            alt="Basement Team"
+          /> */}
+
+
+
           <Scrollytelling.Animation
             tween={{
               start: 0,
@@ -60,7 +70,7 @@ export const LastParallax = () => {
               ],
             }}
           >
-            <h2 className="title">
+            <h2 className={s.title}>
               THAT&apos;S ALL, <br />
               FOLKS
             </h2>

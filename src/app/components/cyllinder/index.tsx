@@ -90,10 +90,10 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
                         <img
                           draggable={false}
                           className={clsx("image", "image")}
-                          src={experiment.og}
+                          ref={experiment.og}
                           width={760}
                           height={496}
-                          quality={100}
+                          // quality={100}
                           alt={"dummy image"}
                         />
 
