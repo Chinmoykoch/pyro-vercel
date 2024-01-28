@@ -27,8 +27,6 @@
     position: relative;
     width: 100px;
     height: 100px;
-    background: linear-gradient(235deg, #050505 10%, #a52020 40%)
-
 }
 
 .countdown-item span {
