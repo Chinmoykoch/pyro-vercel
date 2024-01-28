@@ -4,8 +4,8 @@ import moment from 'moment';
 import "./timer.css"
 
 interface CountdownProps {
-    timeTillDate: string;
-    timeFormat: string;
+    timeTillDate: "05 26 2019, 6:00 am";
+    timeFormat: "MM DD YYYY, h:mm a";
 }
 
 interface CountdownState {
@@ -93,6 +93,9 @@ export default class Countdown extends Component<CountdownProps, CountdownState>
                         </div>
                     )}
                 </div>
+                {/* <div className='countdown-item'>
+                :
+            </div> */}
             </div>
         );
     }

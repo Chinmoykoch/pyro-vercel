@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+
+
 .countdown-wrapper {
     display: flex;
     align-items: center;
@@ -9,6 +11,7 @@
     font-weight: 600;
     gap: 20vh;
     margin-left: 12vh;
+
 }
 
 .countdown-item {
@@ -18,12 +21,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* line-height: 10px; */
-    margin: 5px;
-    padding-top: 10px;
+    margin: 15px;
+    margin-top: 25px;
+    padding-top: 5px;
     position: relative;
     width: 100px;
     height: 100px;
+    background: linear-gradient(235deg, #050505 10%, #a52020 40%)
+
 }
 
 .countdown-item span {
@@ -36,8 +41,10 @@
 
 .countdown-svg {
     position: absolute;
-    top: 0;
+    top: 10;
     left: 0;
     width: 100px;
     height: 100px;
 }
+
+
