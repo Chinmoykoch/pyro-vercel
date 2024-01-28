@@ -54,7 +54,7 @@ export default class Countdown extends Component<CountdownProps, CountdownState>
         const daysRadius = this.mapNumber(Number(days), 30, 0, 0, 360);
         const hoursRadius = this.mapNumber(Number(hours), 24, 0, 0, 360);
         const minutesRadius = this.mapNumber(Number(minutes), 60, 0, 0, 360);
-        const secondsRadius = this.mapNumber(Number(seconds), 60, 0, 0, 360);
+        // const secondsRadius = this.mapNumber(Number(seconds), 60, 0, 0, 360);
 
         if (!seconds) {
             return null;
