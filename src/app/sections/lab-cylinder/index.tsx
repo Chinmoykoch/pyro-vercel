@@ -1,14 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import Layout from '../../components/Layout/index';
 import styles from './Home.module.scss';
-import Header from '../../components/Header/index';
-import Footer from '../../components/Footer/index';
+
 import ProjectHomePage from '../../components/ProjectHomePage/index';
 
 
 const Event = (): JSX.Element => {
-  const [displayMouse, setDisplayMouse] = useState(true);
+
 
   // // Fonction pour enlever l'animation de la souris après un certain temps
   // setTimeout(() => {
