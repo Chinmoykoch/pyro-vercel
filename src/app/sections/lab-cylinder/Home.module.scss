@@ -1,0 +1,64 @@
+@import '../../../index.scss';
+@import '../../../app/css/helpers.scss';
+
+// Les animations
+.animation__opacity {
+  opacity: 0;
+  animation: animation__opacity .8s ease forwards;
+}
+
+// Le SCSS de la page
+
+.container {
+  padding: 0;
+  .mouse__container {
+    &.animation__opacity {
+      animation-delay: 2.2s;
+    }
+    
+    .mouse {
+      position: absolute;
+      height: 3.8rem;
+      width: 2.5rem;
+      border: .3rem solid $primary-color;
+      border-radius: 1.2rem;
+      left: 50%;
+      bottom: 5rem;
+      transform: translateX(-50%);
+      z-index: 99;
+      animation: vertical-mouse-animation 3s ease infinite;
+
+      &.hidden {
+        transition: opacity 2s ease;
+        opacity: 0;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        height: .5rem;
+        width: .3rem;
+        background-color: $primary-color;
+        position: absolute;
+        top: .6rem;
+        left: 50%;
+        margin-left: -.17rem;
+        border-radius: .2rem;
+      }
+    }
+  }
+}
+
+@keyframes vertical-mouse-animation {
+  0%, 60%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+
+  20% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+
+  40% {
+    transform: translateY(20px) translateX(-50%);
+  }
+}
