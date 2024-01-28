@@ -12,11 +12,11 @@
     gap: 10rem;
     /* width: 100%; */
     position: absolute;
-    left:0;
-    top: 18.2rem;
+    left:1.2rem;
+    // top: 18.2rem;
 
     @media screen and (max-width: 800px) {
-        gap: 2.4rem;
+        gap: 1.4rem;
     }
 
 }
@@ -35,7 +35,7 @@
     height: 100px;
     line-height: 2;
     @media screen and (max-width: 800px) {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 }
 

@@ -85,13 +85,13 @@ export default class Countdown extends Component<CountdownProps, CountdownState>
                             <span>minutes</span>
                         </div>
                     )}
-                    {seconds && (
+                    {/* {seconds && (
                         <div className='countdown-item'>
                             <SVGCircle radius={secondsRadius} />
                             {seconds}
                             <span>seconds</span>
                         </div>
-                    )}
+                    )} */}
                 </div>
                 {/* <div className='countdown-item'>
                 :
