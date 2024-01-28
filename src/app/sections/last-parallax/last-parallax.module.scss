@@ -16,7 +16,7 @@
     line-height: 1;
     position: relative;
     z-index: 5;
-  }
+    }
 
   :global(.wrapper) {
     display: flex;
@@ -44,6 +44,7 @@
   .title {
     color: white;
     mix-blend-mode: difference;
+    top: 15rem;
   }
 
   .smile {

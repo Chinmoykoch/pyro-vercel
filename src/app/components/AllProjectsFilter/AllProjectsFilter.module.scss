@@ -1,0 +1,17 @@
+// Importation des fichiers
+@import 'styles/variables';
+
+// Le SCSS de la page
+.container {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  .project__item {
+    display: none;
+    
+    &.active {
+      display: block;
+    }
+  }
+}

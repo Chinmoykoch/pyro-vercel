@@ -1,4 +1,3 @@
-
 import { gsap } from "gsap";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 
@@ -117,3 +116,4 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
     </Scrollytelling.Root>
   );
 };
+

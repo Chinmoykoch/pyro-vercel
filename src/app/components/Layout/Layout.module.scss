@@ -1,0 +1,10 @@
+
+@import '../../../index.scss';
+
+.container{
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  @media screen and ( max-width: 520px ){
+    padding: 20px;}
+  }
